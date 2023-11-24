@@ -1,0 +1,98 @@
+App\Entity\Category:
+    
+    category_1:
+        label: 'Alimentation'
+        domain: '@domain_1'
+        created_by: '@user_1'
+        type: <Enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_2:
+        label: 'Santé'
+        domain: '@domain_1'
+        created_by: '@user_1'
+        type: <Enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_3:
+        label: 'Transports'
+        domain: '@domain_1'
+        created_by: '@user_1'
+        type: <Enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_4:
+        label: 'Equipements'
+        domain: '@domain_1'
+        created_by: '@user_1'
+        type: <Enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_5:
+        label: 'Banque'
+        domain: '@domain_2'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_6:
+        label: 'Habitation'
+        domain: '@domain_2'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_7:
+        label: 'Assurance'
+        domain: '@domain_2'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_8:
+        label: 'Vêtements'
+        domain: '@domain_3'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_9:
+        label: 'Sortie'
+        domain: '@domain_3'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_10:
+        label: 'Voyage'
+        domain: '@domain_3'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+    
+    category_11:
+        label: 'Physique'
+        domain: '@domain_3'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_12:
+        label: 'Epargne'
+        domain: '@domain_4'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+        
+    category_13:
+        label: 'Autre'
+        domain: '@domain_5'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Expense')>
+
+    category_14:
+        label: 'Salaires'
+        domain: '@domain_6'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Income')>
+        
+    category_15:
+        label: 'Aides'
+        domain: '@domain_6'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Income')>
+        
+    category_16:
+        label: 'Intêrets'
+        domain: '@domain_6'
+        created_by: '@user_1'
+        type: <enum('App\Entity\Enum\CategoryType::Income')>
+        

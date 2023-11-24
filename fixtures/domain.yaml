@@ -1,0 +1,21 @@
+App\Entity\Domain:
+    domain (template):
+        created_by: '@user_1'
+
+    domain_1 (extends domain):
+        label: 'Besoins'
+    domain_2 (extends domain):
+        label: 'Dépenses courantes'
+        created_by: '@user_1'
+    domain_3 (extends domain):
+        label: 'Plaisirs'
+        created_by: '@user_1'
+    domain_4 (extends domain):
+        label: 'Epargne'
+        created_by: '@user_1'
+    domain_5 (extends domain):
+        label: 'Autres'
+        created_by: '@user_1'
+    domain_6 (extends domain):
+        label: 'Revenus'
+        created_by: '@user_1'

@@ -1,0 +1,23 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: appleboy/ssh-action@v0.1.2
+          with:
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            key: ${{ secrets.KEY }}
+            script: |
+              cd /api-finance
+              git pull
+              SERVER_NAME=${{ secrets.DOMAIN }} \
+              APP_SECRET=${{ secrets.APP }} \
+              CADDY_MERCURE_JWT_SECRET=${{ secrets.CADDY }} \
+              docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+          name: Build and Deploy

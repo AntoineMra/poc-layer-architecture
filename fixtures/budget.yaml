@@ -1,0 +1,6 @@
+App\Entity\Budget:
+    budget_1:
+        title: 'Budget Juin'
+        date (unique):  <date_create('2023-06-12')>
+        status: <enum('App\Entity\Enum\BudgetStatus::Completed')>
+        created_by: '@user_1'

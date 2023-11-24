@@ -1,0 +1,26 @@
+# api/config/packages/api_platform.yaml
+api_platform:
+    # The title of the API.
+    title: "API Finance"
+
+    # The description of the API.
+    description: "API Finance aims to empower a dashboard to manage personal budgets, investments and financial goals"
+
+    # The version of the API.
+    version: "1.0.0"
+
+    # Set this to false if you want Webby to disappear.
+    show_webby: false
+    
+    formats:
+        jsonld: [ "application/ld+json" ]
+        json: [ "application/json" ]
+        jsonapi: [ "application/vnd.api+json" ]
+        html: [ "text/html" ]
+        csv: [ "text/csv" ]
+    
+    swagger:
+        api_keys:
+            JWT:
+                name: Authorization
+                type: header
